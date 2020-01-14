@@ -6,6 +6,8 @@ class NewTransaction extends StatefulWidget {
 
   NewTransaction(this.addtxn);
 
+
+
   @override
   _NewTransactionState createState() => _NewTransactionState();
 }
@@ -14,6 +16,21 @@ class _NewTransactionState extends State<NewTransaction> {
   final _titlecontroller = TextEditingController();
   final _amountController = TextEditingController();
   DateTime _selectedDate;
+
+  @override
+  void initState(){
+    super.initState();
+  }
+
+  @override
+  void didUpdateWidget(NewTransaction oldWidget) {
+    super.didUpdateWidget(oldWidget);
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+  }
 
   void _submitTxn() {
     if (_amountController.text.isEmpty) {
